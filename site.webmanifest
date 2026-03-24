@@ -1,0 +1,15 @@
+{
+  "name": "OLLIF Operations Atlas",
+  "short_name": "OLLIF Atlas",
+  "start_url": "/OLLIF-Guide/",
+  "display": "standalone",
+  "background_color": "#f4efe4",
+  "theme_color": "#174f49",
+  "icons": [
+    {
+      "src": "/OLLIF-Guide/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
