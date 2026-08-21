@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OLLIF — Oblique Lateral Lumbar Interbody Fusion · ARM</title>
+  <meta name="description" content="OR / procedure site for OLLIF: room maps, preference card, ARM instrument set, surgical flow, and the public Drive library. For surgeon, tech, and scrub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,420;0,9..144,580;0,9..144,620;1,9..144,420&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">OLLIF <span>OR guide</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#orientation">Orientation</a></li>
+        <li><a href="#room">Room</a></li>
+        <li><a href="#card">Card</a></li>
+        <li><a href="#mayo">Mayo</a></li>
+        <li><a href="#case">Case</a></li>
+        <li><a href="#care">Care</a></li>
+        <li><a href="#evidence">Evidence</a></li>
+        <li><a href="#library">Library</a></li>
+      </ul>
+      <div class="role-switch" role="group" aria-label="Filter by role">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="surgeon" aria-pressed="false">Surgeon</button>
+        <button type="button" data-filter="tech" aria-pressed="false">Tech</button>
+        <button type="button" data-filter="scrub" aria-pressed="false">Scrub</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <p class="kicker">Advanced Research Medical · Arrow Cage · K173947</p>
+      <h1>OLLIF</h1>
+      <p class="sub">Oblique Lateral Lumbar Interbody Fusion</p>
+      <p class="lede">A minimally invasive lumbar fusion through Kambin’s triangle, done prone, with biplanar fluoroscopy and neuromonitoring.</p>
+      <div class="role-jumps">
+        <a href="#case" data-set-role="surgeon">Surgeon<small>Case flow, STG, op note</small></a>
+        <a href="#room" data-set-role="tech">Tech<small>Room maps, C-arms, fluoro</small></a>
+        <a href="#mayo" data-set-role="scrub">Scrub<small>Mayo, set, preference card</small></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="disclaimer">
+    <p>Technique is illustrative. Surgeon judgment governs each case. See the IFU and 510(k) for indications, contraindications, warnings, and precautions. Federal law restricts this device to sale by or on the order of a physician.</p>
+  </div>
+
+  <main id="main">
+
+    <!-- 2. ORIENTATION -->
+    <section class="block" id="orientation" data-role="surgeon tech scrub">
+      <div class="wrap">
+        <p class="sec-kicker">01 — What this is</p>
+        <h2>Orientation</h2>
+        <p class="deck">OR / procedure material only. Not a patient site. Approach, room, implant, and what this is not.</p>
+
+        <div class="grid-2">
+          <article class="card" data-role="surgeon">
+            <h3>Kambin’s triangle</h3>
+            <p>The implant and instruments take the pathway through Kambin’s triangle to the lumbar disc.</p>
+            <ul class="fact-list">
+              <li><strong>Inferior</strong> Superior endplate of the caudal vertebra.</li>
+              <li><strong>Medial</strong> Superior articular process (SAP) of that same vertebra.</li>
+              <li><strong>Hypotenuse</strong> Exiting nerve root from the foramen.</li>
+            </ul>
+          </article>
+          <article class="card" data-role="surgeon tech">
+            <h3>Position and imaging</h3>
+            <ul class="fact-list">
+              <li><strong>Patient</strong> Prone. Modified prone on Jackson + Wilson. Left-side access as described in the op note.</li>
+              <li><strong>C-arms</strong> Two units. <span class="badge badge-ap">AP green</span> <span class="badge badge-lat">Lateral red</span> Each C-arm has a matched-color monitor.</li>
+              <li><strong>Monitoring</strong> Continuous electrophysiology. Probe is stimulated. Find a silent window before committing. Op note: screws silent to 25 mA.</li>
+              <li><strong>Incision</strong> 10 mm skin and fascia.</li>
+            </ul>
+          </article>
+          <article class="card" data-role="surgeon">
+            <h3>Not TLIF. Not XLIF/DLIF.</h3>
+            <p>TLIF removes some or all of the facet on the approach side. OLLIF is facet-sparing.</p>
+            <p>XLIF/DLIF enters anterior to Kambin’s triangle and passes through psoas. OLLIF does not go through psoas; the path is posterior to iliopsoas.</p>
+          </article>
+          <article class="card" data-role="surgeon">
+            <h3>Arrow Cage · K173947</h3>
+            <p>ARM Arrow Cage. Titanium alloy 6Al-4V. Cannulated bullet nose, graft windows, toothed endplates. Rectangular, parallel configuration. No markers or pins.</p>
+            <p>Indicated L2–S1, one or two contiguous levels, for DDD with up to Grade I spondylolisthesis after six months of non-operative treatment, with supplemental fixation and autograft.</p>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/1inf8Zl4AQOJ8DjCIj_xnFKLqNXrRqe-s/view">510(k)</a>
+              <a href="https://drive.google.com/file/d/13KVDQsFhoSqU3idljrWUYFgvBIuUugWr/view">IFU</a>
+            </p>
+          </article>
+        </div>
+
+        <h3 data-role="surgeon tech">Surgical animation</h3>
+        <p class="deck" data-role="surgeon tech">Drive poster still. Click plays here. Double-click opens Drive.</p>
+        <div class="vid-row" data-role="surgeon tech">
+          <a class="vid-thumb vid-thumb--lg" href="https://drive.google.com/file/d/1eQSXnp2NZtygl90c9GxQb7a_GjQOv6KJ/view" target="_blank" rel="noopener">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1eQSXnp2NZtygl90c9GxQb7a_GjQOv6KJ&sz=w640" referrerpolicy="no-referrer" alt="Poster still of the OLLIF surgical animation" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Surgical animation</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. BUILD THE ROOM -->
+    <section class="block" id="room" data-role="tech scrub surgeon">
+      <div class="wrap">
+        <p class="sec-kicker">02 — Tech and scrub first</p>
+        <h2>Build the room</h2>
+        <p class="deck">Three maps. Same language throughout: lateral C-arm is red, AP C-arm is green. Do not add furniture that is not on the diagrams.</p>
+
+        <div class="grid-3">
+          <figure data-role="tech scrub">
+            <img src="https://drive.google.com/thumbnail?id=1_jpVP6VM219ktiVeZoec0vQhD1SScaPE&sz=w1000" referrerpolicy="no-referrer" alt="Basic OLLIF room map, AP C-arm green, lateral C-arm red" width="800" height="600" loading="lazy">
+            <figcaption>
+              <span class="fig-no">Fig. 01 · Basic / simple C-arm</span>
+              Dual C-arm room. Anesthesia at the head. Mayo on the field. Back tables left.
+              <a href="https://drive.google.com/file/d/1_jpVP6VM219ktiVeZoec0vQhD1SScaPE/view">Open on Drive</a>
+            </figcaption>
+          </figure>
+          <figure data-role="tech scrub">
+            <img src="https://drive.google.com/thumbnail?id=1_3ZX6umUw5_qiQ6gR5QEPFE6teEsU7eE&sz=w1000" referrerpolicy="no-referrer" alt="Advanced OLLIF room map, AP C-arm green, lateral C-arm red, matching monitors bottom right" width="800" height="600" loading="lazy">
+            <figcaption>
+              <span class="fig-no">Fig. 02 · Advanced room map</span>
+              Same stations, tighter C-arm and monitor pairing.
+              <a href="https://drive.google.com/file/d/1_3ZX6umUw5_qiQ6gR5QEPFE6teEsU7eE/view">Open on Drive</a>
+            </figcaption>
+          </figure>
+          <figure data-role="tech scrub surgeon">
+            <img src="https://drive.google.com/thumbnail?id=1_GreNAbJYHEDuqwuDxGXHYpkKSJhO5lN&sz=w1000" referrerpolicy="no-referrer" alt="OLLIF Open Room Map with bipolar, bovie, drill and suction added below the Mayo" width="800" height="600" loading="lazy">
+            <figcaption>
+              <span class="fig-no">Fig. 03 · Open conversion</span>
+              Adds bipolar / bovie / drill and suction.
+              <a href="https://drive.google.com/file/d/1_GreNAbJYHEDuqwuDxGXHYpkKSJhO5lN/view">Open on Drive</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <h3 data-role="tech scrub">Callouts from the maps</h3>
+        <ul class="callouts" data-role="tech scrub">
+          <li><strong>Head.</strong> Anesthesia, green zone.</li>
+          <li><strong>Top-left.</strong> Neuromonitoring.</li>
+          <li><strong>Center.</strong> Jackson table. Mayo on the field.</li>
+          <li><strong>Left.</strong> L-shaped back tables. Surgeon left of table. Scrub between table and back tables. Assistant behind the back tables.</li>
+          <li class="zone-lat"><strong>Right.</strong> Lateral C-arm (red) and its red monitor (bottom-right).</li>
+          <li class="zone-ap"><strong>Right.</strong> AP C-arm (green) and its green monitor (bottom-right).</li>
+          <li><strong>Open map only.</strong> Bipolar / bovie / drill under the Mayo, suction beside them.</li>
+        </ul>
+
+        <h3 data-role="tech">Real OR</h3>
+        <p class="deck" data-role="tech">Stills open on Drive. Videos play here on click. Double-click a video to open Drive.</p>
+        <div class="thumbs" data-role="tech scrub">
+          <a href="https://drive.google.com/file/d/11t0anP3Z1AG00tG2GshMDvMThI24eoN3/view" target="_blank" rel="noopener">
+            <img src="https://drive.google.com/thumbnail?id=11t0anP3Z1AG00tG2GshMDvMThI24eoN3&sz=w240" referrerpolicy="no-referrer" alt="Under-table Jackson sling" width="240" height="180" loading="lazy">
+            <span>Jackson sling</span>
+          </a>
+          <a href="https://drive.google.com/file/d/14yDK8Pm3-OLe3_W0hwaTEyT5nU9XxYWN/view" target="_blank" rel="noopener">
+            <img src="https://drive.google.com/thumbnail?id=14yDK8Pm3-OLe3_W0hwaTEyT5nU9XxYWN&sz=w240" referrerpolicy="no-referrer" alt="Patient on Wilson frame" width="240" height="180" loading="lazy">
+            <span>Wilson frame</span>
+          </a>
+          <a href="https://drive.google.com/file/d/17LGRUCC8LGhLdD3u07WSteo0UNZtM8lq/view" target="_blank" rel="noopener">
+            <img src="https://drive.google.com/thumbnail?id=17LGRUCC8LGhLdD3u07WSteo0UNZtM8lq&sz=w240" referrerpolicy="no-referrer" alt="Dual C-arm field, patient prone" width="240" height="180" loading="lazy">
+            <span>Dual C-arm field</span>
+          </a>
+          <a href="https://drive.google.com/file/d/10X6slDbfngyiQde7vrGWpf9P-dK6dwQI/view" target="_blank" rel="noopener">
+            <img src="https://drive.google.com/thumbnail?id=10X6slDbfngyiQde7vrGWpf9P-dK6dwQI&sz=w240" referrerpolicy="no-referrer" alt="Draped sterile field" width="240" height="180" loading="lazy">
+            <span>Draped field</span>
+          </a>
+          <a href="https://drive.google.com/file/d/1o1GfCC7COhs548gGqJa9EbpXumGznMVW/view" target="_blank" rel="noopener">
+            <img src="https://drive.google.com/thumbnail?id=1o1GfCC7COhs548gGqJa9EbpXumGznMVW&sz=w240" referrerpolicy="no-referrer" alt="Second view of the draped field" width="240" height="180" loading="lazy">
+            <span>Draped field, second view</span>
+          </a>
+          <a href="https://drive.google.com/file/d/1kvFSaZEvUbYZ3rR4UYgrNOFQuv_fP6Jk/view" target="_blank" rel="noopener">
+            <img src="https://drive.google.com/thumbnail?id=1kvFSaZEvUbYZ3rR4UYgrNOFQuv_fP6Jk&sz=w240" referrerpolicy="no-referrer" alt="Back tables, instrument trays, and the field" width="240" height="180" loading="lazy">
+            <span>Back tables and field</span>
+          </a>
+          <a href="https://drive.google.com/file/d/1URO0CrUSC1PRagEZJ11vSeCeeKTYsJWQ/view" target="_blank" rel="noopener">
+            <img src="https://drive.google.com/thumbnail?id=1URO0CrUSC1PRagEZJ11vSeCeeKTYsJWQ&sz=w240" referrerpolicy="no-referrer" alt="Mayo tray at the prepped field" width="240" height="180" loading="lazy">
+            <span>Mayo at the field</span>
+          </a>
+        </div>
+        <div class="vid-row vid-row--mini" data-role="tech">
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1LVVVP4S9W_A2xd-dsWc09iaC6GwA8UAh/view" target="_blank" rel="noopener">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1LVVVP4S9W_A2xd-dsWc09iaC6GwA8UAh&sz=w240" referrerpolicy="no-referrer" alt="Poster of the OR room walkthrough" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Room walkthrough</span>
+          </a>
+        </div>
+        <p class="link-row" data-role="tech">
+          <a href="https://drive.google.com/drive/folders/1-O9q0gP7X3uMdQp_4ZDLBpxbBMg3Sp9Y">OR photo folder</a>
+        </p>
+
+        <h3 id="carm" data-role="tech">C-arm walkthrough</h3>
+        <p class="deck" data-role="tech">Named setup films first. The rest of the walkthrough is numbered. Click plays here. Double-click opens Drive.</p>
+        <div class="vid-row" data-role="tech">
+          <a class="vid-thumb vid-thumb--lg" href="https://drive.google.com/file/d/1zRnwK3sznTRnktapOZEPceFo2J-H-xtv/view" target="_blank" rel="noopener">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1zRnwK3sznTRnktapOZEPceFo2J-H-xtv&sz=w640" referrerpolicy="no-referrer" alt="Poster still of lateral C-arm setup film" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Lateral C-arm setup</span>
+          </a>
+          <a class="vid-thumb vid-thumb--lg" href="https://drive.google.com/file/d/1CFQSmXxsQNGm1qAyzCXHIfXbCCcIMxWj/view" target="_blank" rel="noopener">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1CFQSmXxsQNGm1qAyzCXHIfXbCCcIMxWj&sz=w640" referrerpolicy="no-referrer" alt="Poster still of AP C-arm terminology film" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>AP C-arm and terminology</span>
+          </a>
+        </div>
+        <p class="link-row" data-role="tech">
+          <a href="https://drive.google.com/drive/folders/1opm32qfqlGxpu8ouW2krLEgQHy8EImmn">C-ARM Videos — Share folder</a>
+          <a href="https://drive.google.com/drive/folders/1-1BIM_J7bUa4rkRVSWQ0ngSeA2_kLr8f">iPhone clip folder</a>
+        </p>
+        <h4 data-role="tech">More of the walkthrough</h4>
+                <div class="thumbs thumbs--vid" data-role="tech">
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1vWT9LYrcdjs4xU3IserKae6XjBhA8mSZ/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1vWT9LYrcdjs4xU3IserKae6XjBhA8mSZ&sz=w240" referrerpolicy="no-referrer" alt="C-arm positioned around the table" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>C-arm at the table</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1g2Wf4qqoJ0OIcQUSTFFazMWCpoiE-BMe/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1g2Wf4qqoJ0OIcQUSTFFazMWCpoiE-BMe&sz=w240" referrerpolicy="no-referrer" alt="Operating the C-arm base controls" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>C-arm controls</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1h59_0oiGYifnnXI3CnbOn2N352rnSYbf/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1h59_0oiGYifnnXI3CnbOn2N352rnSYbf&sz=w240" referrerpolicy="no-referrer" alt="C-arm in the setup room" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>C-arm in the room</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1IEZo4NJ6y-QbaoZ-wunuOEtNqwbjbs5I/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1IEZo4NJ6y-QbaoZ-wunuOEtNqwbjbs5I&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 6" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 06</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/17bswCLiiRXj0OSqnDHtIFQgPrq0H98A-/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=17bswCLiiRXj0OSqnDHtIFQgPrq0H98A-&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 7" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 07</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/17ywm6YKxPaytzlT0kDfubxzSvuevfnvB/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=17ywm6YKxPaytzlT0kDfubxzSvuevfnvB&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 8" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 08</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1jyiG4cjzHaZT4t51cbvuadUf5TuVUEc5/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1jyiG4cjzHaZT4t51cbvuadUf5TuVUEc5&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 9" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 09</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1vbKGozGFncQCpsgD2CoM5V2AKHQr7jFV/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1vbKGozGFncQCpsgD2CoM5V2AKHQr7jFV&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 10" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 10</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1kreSiavQH-BRBCnj-OeK9V2fG9iyai8p/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1kreSiavQH-BRBCnj-OeK9V2fG9iyai8p&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 11" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 11</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1S4osJIsWJe-2ZwEf2qlEB9ct4JtZyyGF/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1S4osJIsWJe-2ZwEf2qlEB9ct4JtZyyGF&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 12" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 12</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1HHqMPlm7tUEf1gmSfUxyYqhFIaZbrH2c/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1HHqMPlm7tUEf1gmSfUxyYqhFIaZbrH2c&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 13" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 13</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/19qIrigoWYSWa2wDdMs0LM5TU5hPEXg55/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=19qIrigoWYSWa2wDdMs0LM5TU5hPEXg55&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 14" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 14</span>
+          </a>
+          <a class="vid-thumb" href="https://drive.google.com/file/d/1QUIctVh5TiFfCCdgEwZL058gO9rvSZKY/view" target="_blank" rel="noopener" title="Click to play. Double-click opens Drive.">
+            <span class="vid-still">
+              <img src="https://drive.google.com/thumbnail?id=1QUIctVh5TiFfCCdgEwZL058gO9rvSZKY&sz=w240" referrerpolicy="no-referrer" alt="C-arm walkthrough clip 15" width="240" height="135" loading="lazy">
+              <span class="play" aria-hidden="true"></span>
+            </span>
+            <span>Walkthrough 15</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PREFERENCE CARD -->
+    <section class="block" id="card" data-role="tech scrub">
+      <div class="wrap">
+        <p class="sec-kicker">03 — Preference card</p>
+        <h2>What must be in the room</h2>
+        <p class="deck">POSTERIOR APPROACH OLLIF · LUMBAR FUSION, MIS, 1 LEVEL. Source: General Preference Card — OLLIF FINAL.xlsx. Three columns: open / hold (PRN) / open-conversion.</p>
+        <p class="link-row"><a href="https://drive.google.com/file/d/1A-aYScIVilDAx27R1L7IEuQnUuyUMpEf/view">Open preference card on Drive</a></p>
+
+        <div class="cols-pref">
+          <article class="card" data-role="tech">
+            <h3>Equipment to open</h3>
+            <ul>
+              <li>Foot platform ×3</li>
+              <li>SCD ×1</li>
+              <li>Digital scale ×1 — weigh sponges; kitchen scale to 500 g acceptable</li>
+              <li>Jackson table + Wilson frame ×1 (Maquet mentioned)</li>
+              <li>C-arm ×2</li>
+              <li>Small back table ×1</li>
+              <li>Mayo stand ×1</li>
+            </ul>
+            <h4>Instruments (open)</h4>
+            <ul>
+              <li>Large mallet 2–4 lb ×1</li>
+              <li>Kocher ×2</li>
+              <li>Bayonet FCP ×1</li>
+              <li>Needle holder ×3</li>
+              <li>Scissors ×1</li>
+            </ul>
+          </article>
+          <article class="card" data-role="tech scrub">
+            <h3>Positioning</h3>
+            <ul>
+              <li>Armboard ×2</li>
+              <li>Foam pad ×3</li>
+              <li>Wilson frame</li>
+              <li>Gel pad under knee ×2</li>
+              <li>Pillow under lower leg ×2</li>
+              <li>Safety strap ×2</li>
+              <li>Safety strap thigh ×2</li>
+              <li>Jackson table</li>
+            </ul>
+            <h4>Dressings</h4>
+            <ul>
+              <li>Benzoin + ½″ Steri-Strips ×2</li>
+              <li>ABD + 4×4</li>
+              <li>Medipore</li>
+              <li>2-level: two Steri packs, one ABD, gauze tray</li>
+            </ul>
+          </article>
+          <article class="card" data-role="scrub">
+            <h3>Key supplies (open)</h3>
+            <ul>
+              <li>Ioban 3M 6619</li>
+              <li>C-arm drape 60×42, 1013</li>
+              <li>Mayo drape 23×54</li>
+              <li>Drape linen 54×72 ×2</li>
+              <li>10×10 drape</li>
+              <li>Vicryl 2-0 — open one more than levels fused</li>
+              <li>DuraPrep 26 ml</li>
+              <li>ABD, 4×4, Ray-Tec, Steri-Strips</li>
+              <li>Foley 16 Fr</li>
+              <li>#11 blade</li>
+              <li>18 ga 3.5″ spinal needle</li>
+              <li>Syringes 3 / 10 / 20 / 30 ml — 3 ml for Kenalog + air; 30 ml for 0.75% bupivacaine</li>
+              <li>Wilson / Jackson foam kit</li>
+              <li>Trash bags ×4</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 data-role="scrub tech">Drugs — from the card</h3>
+        <div class="table-wrap" data-role="scrub tech">
+          <table>
+            <thead>
+              <tr><th>Item</th><th>Status</th><th>Note</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>NS irrigation 1000 ml</td><td><span class="badge">Open</span></td><td></td></tr>
+              <tr><td>0.75% PF bupivacaine 30 ml</td><td><span class="badge">Open</span></td><td>Anesthesia calculates by kg. Preferred Exparel noted.</td></tr>
+              <tr><td>0.25% bupivacaine 1 ml + Kenalog / triamcinolone 40 mg in 3 ml syringe</td><td><span class="badge">Open</span></td><td>End of case. Depo-Medrol available.</td></tr>
+              <tr><td>Lidocaine 1% / epi 1:100000 29 ml + bupivacaine 29 ml mixed 1:1</td><td><span class="badge">Open</span></td><td></td></tr>
+              <tr><td>Thrombin 5000 u</td><td><span class="badge badge-hold">Hold</span></td><td></td></tr>
+              <tr><td>Bacitracin ointment / bacitracin 50k in 1 L NS</td><td><span class="badge badge-hold">Hold</span></td><td>For open</td></tr>
+              <tr><td>Thrombin + Surgifoam powder</td><td><span class="badge badge-hold">Hold</span></td><td>For open</td></tr>
+              <tr><td>TXA 10 mg</td><td><span class="badge badge-hold">Hold / PRN</span></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 data-role="scrub surgeon">If it goes open</h3>
+        <div class="grid-2">
+          <article class="card" data-role="tech scrub">
+            <h3>Hold / available</h3>
+            <p>Headlight. Midas Rex IPC + 14MH30 + footpedal. Valley Lab cautery ×2. Neptune 2 + 4-port manifold + 14 Fr tip. Cushing bayonet bipolar. Hemovac 10 Fr. 0 Vicryl J740D (×2 one-level / ×3 two-level). 2-0 Vicryl. #10. 12 ga angiocath. Telfa. Surgifoam. Coude Foley.</p>
+          </article>
+          <article class="card" data-role="scrub">
+            <h3>Instruments</h3>
+            <p><strong>Available:</strong> neuro set, large Gelpis, x-long rongeurs, rod cutter, x-long Cobbs / curettes, long rotating Kerrison, watchmaker, slotted mallet, Penfield tray, Leksell.</p>
+            <p><strong>Need to open if converting:</strong> osteotomes, lumbar fusion curettes, double-end ball elevator, short rotating Kerrison, retractors, bipolar, drill, medium mallet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MAYO -->
+    <section class="block" id="mayo" data-role="scrub">
+      <div class="wrap">
+        <p class="sec-kicker">04 — Scrub</p>
+        <h2>Mayo and back table</h2>
+        <p class="deck">Access tray and posterior instrumentation. Official ARM set from STG MM-01-1 REV C, 2023-03-10.</p>
+        <p class="link-row"><a href="https://drive.google.com/drive/folders/1FMzIsc-_HV-pYr49HiUs7ARG8r-f-_yg">Mayo folder on Drive</a></p>
+
+        <div class="grid-2">
+          <figure>
+            <img src="https://drive.google.com/thumbnail?id=1b8u8Fn7iTBydwZaM1Pm8URZMD7xDpMT0&sz=w800" referrerpolicy="no-referrer" alt="Mayo access tray: mallet, probe, dilator, portal, K-wires, pituitary rongeurs, Jamshidi needles" width="1000" height="750" loading="lazy">
+            <figcaption>
+              <span class="fig-no">Mayo / access</span>
+              Mallet, probe, dilator, portal, K-wires, pituitary, Jamshidi.
+              <a href="https://drive.google.com/file/d/1b8u8Fn7iTBydwZaM1Pm8URZMD7xDpMT0/view">Open on Drive</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="https://drive.google.com/thumbnail?id=1eKtw7B509_REO3JKUX6bjnPhGk97H9CA&sz=w800" referrerpolicy="no-referrer" alt="Back table tray with OLLIF inserters, access portal, wrench, T-handles and posterior instrumentation" width="1000" height="750" loading="lazy">
+            <figcaption>
+              <span class="fig-no">Back table</span>
+              Screws / posterior instrumentation and ARM set pieces.
+              <a href="https://drive.google.com/file/d/1eKtw7B509_REO3JKUX6bjnPhGk97H9CA/view">Open on Drive</a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <details class="fold">
+          <summary>ARM instrument set</summary>
+          <div class="table-wrap">
+          <table>
+            <thead><tr><th>PN</th><th>Description</th><th>Qty</th></tr></thead>
+            <tbody>
+              <tr><td class="pn">01-00</td><td>OLLIF Inserter assembly</td><td class="qty">—</td></tr>
+              <tr><td class="pn">01-00-1</td><td>Outer</td><td class="qty">2</td></tr>
+              <tr><td class="pn">01-00-2</td><td>Inner</td><td class="qty">2</td></tr>
+              <tr><td class="pn">01-01</td><td>Dilator</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-02</td><td>Access portal</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-03</td><td>Disc drill</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-04</td><td>Shaper assembly (body, knob, blades ×2)</td><td class="qty">—</td></tr>
+              <tr><td class="pn">01-05</td><td>Pituitary rongeur</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-06</td><td>Flexible curette assembly</td><td class="qty">—</td></tr>
+              <tr><td class="pn">01-07</td><td>Articulating curette</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-08</td><td>Graft delivery tube</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-09</td><td>Graft tamp</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-10</td><td>Impactor</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-11</td><td>Mallet</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-12</td><td>Wrench</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-100</td><td>¼″ QC palm handle</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-101</td><td>Mini AO palm handle</td><td class="qty">1</td></tr>
+              <tr><td class="pn">01-9080-18T</td><td>Threaded GW 18″</td><td class="qty">20</td></tr>
+              <tr><td class="pn">01-9080-18U</td><td>Unthreaded GW 18″</td><td class="qty">20</td></tr>
+              <tr><td class="pn">MP214-3.0/1</td><td>Technomed monopolar probe with sleeve</td><td class="qty">1 / pack</td></tr>
+            </tbody>
+          </table>
+          </div>
+        </details>
+
+        <h3>Implants</h3>
+        <p>Arrow cage lengths 27 / 30 / 33 mm. Heights 08–15 mm, color-coded. Titanium 6Al-4V, cannulated bullet nose, graft windows, toothed endplates.</p>
+        <div class="swatches" aria-label="Height color codes">
+          <span class="swatch"><i class="c08"></i>08 dark green</span>
+          <span class="swatch"><i class="c09"></i>09 purple</span>
+          <span class="swatch"><i class="c10"></i>10 dark blue</span>
+          <span class="swatch"><i class="c11"></i>11 copper</span>
+          <span class="swatch"><i class="c12"></i>12 light gold</span>
+          <span class="swatch"><i class="c13"></i>13 light green</span>
+          <span class="swatch"><i class="c14"></i>14 light magenta</span>
+          <span class="swatch"><i class="c15"></i>15 light blue</span>
+        </div>
+
+        <p class="note"><strong>Sterilization (IFU).</strong> Steam pre-vac 270°F / 132°C, 4 min, 4 pulses, 30 min dry. Non-sterile as supplied. Do not reuse implants. Previously implanted devices must never be reused.</p>
+      </div>
+    </section>
+
+    <!-- 6. THE CASE -->
+    <section class="block" id="case" data-role="surgeon">
+      <div class="wrap">
+        <p class="sec-kicker">05 — Surgeon</p>
+        <h2>The case</h2>
+        <p class="deck">Numbered flow from STG MM-01-1 REV C and the example op note. Each step is short. Judgment at the table governs.</p>
+
+        <ol class="steps">
+          <li>
+            <div>
+              <h3>Before incision</h3>
+              <p>GA, SCD, Foley, pre-op antibiotic. Jackson + Wilson, modified prone, left-side access. Both C-arms up. Neuromonitoring live.</p>
+              <p>Landmarks: spinous process, transverse process, disc, endplates, pedicles.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Bone marrow</h3>
+              <p>Jamshidi in the upper pedicle through a separate incision. Mix aspirate with TCP.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Targeting</h3>
+              <p>AP: confirm midline (pedicles equal). Mark midline. Mark disc trajectory.</p>
+              <p>Lateral: endplates lined up. Mark disc angle across the flank. Transfer the distance from disc center to flank apex, from midline — that is the incision. Confirm with a spinal needle. 10 mm skin and fascia.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Access</h3>
+              <p>Neuromonitoring probe through the incision toward the inferior pedicle / inferior foramen. Tip between medial and lateral pedicle, inferior foramen.</p>
+              <p>Do not cross the medial pedicle on AP until the probe is anterior to the posterior vertebral body on lateral. Stay out of the canal. Stimulate. Find a silent window.</p>
+              <p>Advance the sleeve onto the anulus, remove the probe, pass a K-wire into the disc, then dilator, then access portal. Portal: medial to the pedicle on AP, about 0.5 cm into the disc on lateral. One hand stays on the portal against the skin.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Discectomy</h3>
+              <p>Through the 10 mm portal: disc drill, shaper (clockwise only, expand in 1 mm increments), pituitary, articulating and flexible curettes. Decorticate endplates under biplanar fluoro.</p>
+              <p>Drill shaft markings estimate implant length (27 / 30 / 33 mm). Shaper window estimates height. New flexible-curette blade per level. Do not rotate the flexible curette with the blade exposed.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Graft</h3>
+              <p>TCP soaked in BMA via graft tube and tamp. Bevel on the sleeve aims the graft. Then place a guide wire through the portal into the graft mass and remove the portal.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Cage</h3>
+              <p>Arrow titanium cage packed with TCP/BMA, inserted over the K-wire under biplanar fluoro and neuromonitoring. Mallet the inserter. Endplate surface is perpendicular to the T-handle. Release by turning the retainer knob counterclockwise; wrench if needed.</p>
+              <p>Goal in the op note: restore height and indirect decompression.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Posterior</h3>
+              <p>Rotate to true prone. Percutaneous pedicle screws and rods. Posterolateral TCP/BMA. Screws silent to 25 mA. Close 2-0 Vicryl, Steri-Strips.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>End of case</h3>
+              <p>ESI: 2 cc air, confirm epidural / no CSF, then 40 mg Kenalog + 1 cc 0.25% Marcaine.</p>
+              <p>Then 0.75% Marcaine deep and paravertebral (op note: 20 cc + 20 cc). Counts correct. PACU.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3>Documents</h3>
+        <p>Surgical Technique Guide — embed on demand. IFU and example op note as cards.</p>
+        <div class="preview-box">
+          <button class="preview-load" type="button" data-src="https://drive.google.com/file/d/151aAb3wFNfqHtmcyrmyAqsnAEMs3UHsI/preview">Load STG preview (41 pages, 3.4 MB)</button>
+        </div>
+        <p class="preview-meta"><a href="https://drive.google.com/file/d/151aAb3wFNfqHtmcyrmyAqsnAEMs3UHsI/view">Open STG on Drive</a> · MM-01-1 REV C</p>
+
+        <div class="grid-2" style="margin-top:1rem">
+          <article class="card">
+            <h3>IFU</h3>
+            <p>Indications, contraindications, cleaning, sterilization, postoperative mobilization. MM-01-2 REV B.</p>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/13KVDQsFhoSqU3idljrWUYFgvBIuUugWr/preview">Preview</a>
+              <a href="https://drive.google.com/file/d/13KVDQsFhoSqU3idljrWUYFgvBIuUugWr/view">Open on Drive</a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Op note example</h3>
+            <p>Template: OLLIF + posterior MIS screws + ESI + transpedicular BMA. Left-side modified prone. Screws silent to 25 mA.</p>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/1uPOT8NyZylrV4u3aKuSwVPydJSQ1KM_1/preview">Preview</a>
+              <a href="https://drive.google.com/file/d/1uPOT8NyZylrV4u3aKuSwVPydJSQ1KM_1/view">Open on Drive</a>
+            </p>
+          </article>
+        </div>
+        <p class="note">Removal, if needed: re-access with neuromonitoring probe and guide wire, seat the dilator in the pocket on the back of the cage, pass the wire into the threaded aperture, thread the inserter inner shaft, tap the implant out.</p>
+      </div>
+    </section>
+
+    <!-- 7. CARE -->
+    <section class="block" id="care" data-role="surgeon">
+      <div class="wrap">
+        <p class="sec-kicker">06 — Perioperative</p>
+        <h2>Care</h2>
+        <p class="deck">Protocols from the Drive care folder. IFU: careful loading for the first three months; brace and activity per surgeon; smoking and noncompliance raise nonunion risk.</p>
+        <p class="link-row"><a href="https://drive.google.com/drive/folders/1Ne-snYd1RlETkb7Rm-oGGPbKbHv6t_ko">Care folder</a></p>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Conservative protocol</h3>
+            <p>2 pages.</p>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/1oDYYz3USGAOoOhTDd3IeAdTWwgHMZXXg/preview">Preview</a>
+              <a href="https://drive.google.com/file/d/1oDYYz3USGAOoOhTDd3IeAdTWwgHMZXXg/view">Open</a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Consent</h3>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/1CZgbsuTCmuNIifG0lR7RaJJb3TJgefTl/preview">Preview</a>
+              <a href="https://drive.google.com/file/d/1CZgbsuTCmuNIifG0lR7RaJJb3TJgefTl/view">Open</a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>PT protocol</h3>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/17DaQpt_5rNKTdPugytdmY92cyre6IGzK/preview">Preview</a>
+              <a href="https://drive.google.com/file/d/17DaQpt_5rNKTdPugytdmY92cyre6IGzK/view">Open</a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Perioperative pain, 2025</h3>
+            <p>PDF.</p>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/1MIr_Xg4-nRidsMf8ppM9mYTI9lYpEfSh/preview">Preview</a>
+              <a href="https://drive.google.com/file/d/1MIr_Xg4-nRidsMf8ppM9mYTI9lYpEfSh/view">Open</a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Post-op nerve root irritation</h3>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/10gVfW6FRk4HfAzQxndvxhCSoGXcNtSi2/preview">Preview</a>
+              <a href="https://drive.google.com/file/d/10gVfW6FRk4HfAzQxndvxhCSoGXcNtSi2/view">Open</a>
+            </p>
+          </article>
+          <article class="card">
+            <h3>Personalized pain taper</h3>
+            <p>Tapering protocol image.</p>
+            <p class="link-row">
+              <a href="https://drive.google.com/file/d/1ALa2TOum1W9t1sHSCMnoMAsphNzeTuhq/preview">Preview</a>
+              <a href="https://drive.google.com/file/d/1ALa2TOum1W9t1sHSCMnoMAsphNzeTuhq/view">Open</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. EVIDENCE -->
+    <section class="block" id="evidence" data-role="surgeon">
+      <div class="wrap">
+        <p class="sec-kicker">07 — Papers and coding</p>
+        <h2>Evidence and admin</h2>
+        <p class="deck">White papers as Drive links. No commentary beyond the titles. Coding from the FY2026 summary only.</p>
+        <p class="link-row">
+          <a href="https://drive.google.com/drive/folders/1gCccuZQhCXOoD6aCHrmButVEDjH3oR4L">White papers folder</a>
+          <a href="https://drive.google.com/file/d/1inf8Zl4AQOJ8DjCIj_xnFKLqNXrRqe-s/view">510(k)</a>
+          <a href="https://drive.google.com/file/d/1p56kfu3VMu5YsD5gLxW2hR5Vd7e_JM3j/view">Coding FY2026</a>
+        </p>
+
+        <div class="dir">
+          <ul>
+            <li><a href="https://drive.google.com/file/d/1BC5aB6x5WjUQVCRQupUAvnNM34Si0ybX/view">Clinical and Radiological Outcomes</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/13UEq1_IGKnd6uWhN1thWrpXpnuDK7x7E/view">OLLIF Landmark Study</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1UbV4SH9CifHluko7B-4dCFaRsee5AOAZ/view">OLLIF Study 2016</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1kpw15YQhqnAgb_u66czNC6I_ZBiMAmJt/view">OLLIF Scoliosis Study 2017</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/119KfN2Xsrdz3l7VkTU4--KCfBkjcSL1C/view">Stenosis Study Nov 2020</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1JSfuCqdeU9O3VcEpD4sZkH540aNOe_VZ/view">OLLIF BMI Impact Study</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1otNuTJgZBCgLz1sxl4V6mPp9dVfcJFcN/view">OLLIF Radiation Exposure</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1alszFJZ-6KZRPrIEBzKdREUdk2SyyzBQ/view">Transfacet OLLIF Paper</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1QkVzvg1XD0YWpMSTxC-2oiBEzGRPl9Q4/view">MIS-DLIF</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1dmsTF_6V1nXURFpOYuevCMm3tDihDpDQ/view">MIS-DTIF</a><span class="kind">PDF</span></li>
+          </ul>
+        </div>
+
+        <h3>Professional-fee CPTs</h3>
+        <p>From the ARM FY2026 coding summary. 2026 outpatient: 22558 is now allowed as the IPO list changes.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>CPT</th><th>Description</th><th>1-level</th><th>2-level</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="pn">22558</td><td>Lumbar spine fusion (anterior)</td><td>1</td><td>1</td></tr>
+              <tr><td class="pn">22612</td><td>Lumbar spine fusion (posterolateral)</td><td>1</td><td>1</td></tr>
+              <tr><td class="pn">22853</td><td>Insertion, biomechanical device</td><td>1</td><td>2</td></tr>
+              <tr><td class="pn">22840</td><td>Spine fixation, 2 vertebral segments</td><td>1</td><td>—</td></tr>
+              <tr><td class="pn">22842</td><td>Spine fixation, 3–6 vertebral segments</td><td>—</td><td>1</td></tr>
+              <tr><td class="pn">63056</td><td>Decompress spinal cord, lumbar</td><td>1</td><td>1</td></tr>
+              <tr><td class="pn">63057</td><td>Decompress spinal cord, add-on</td><td>1</td><td>1</td></tr>
+              <tr><td class="pn">22585</td><td>Additional spinal fusion (anterior)</td><td>—</td><td>1</td></tr>
+              <tr><td class="pn">22614</td><td>Spine fusion extra segment (posterolateral)</td><td>—</td><td>1</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>DRGs listed:</strong> 402 (single-level combined A/P except cervical); 450 (single-level fusion except cervical w/ MCC); 428 (multi-level combined A/P w/o CC/MCC); 427 (multi-level w/ CC); 426 (multi-level w/ MCC).</p>
+      </div>
+    </section>
+
+    <!-- 9. LIBRARY -->
+    <section class="block" id="library" data-role="surgeon tech scrub">
+      <div class="wrap">
+        <p class="sec-kicker">08 — Complete Drive map</p>
+        <h2>Library</h2>
+        <p class="deck">Every folder and file named in the source Drive, so nothing is lost. Original files still live on the public Drive and open there.</p>
+        <p class="link-row"><a href="https://drive.google.com/drive/folders/1-L1SePyKbx5dZh5MpVVDtyh_7OVQorSW">Root Drive folder</a></p>
+
+        <div class="dir">
+          <details class="fold">
+            <summary>Root and maps</summary>
+            <ul>
+            <li><a href="https://drive.google.com/drive/folders/1-L1SePyKbx5dZh5MpVVDtyh_7OVQorSW">OLLIF root</a><span class="kind">Folder</span></li>
+            <li><a href="https://drive.google.com/file/d/1_jpVP6VM219ktiVeZoec0vQhD1SScaPE/view">Basic room map</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1_3ZX6umUw5_qiQ6gR5QEPFE6teEsU7eE/view">Advanced room map</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1_GreNAbJYHEDuqwuDxGXHYpkKSJhO5lN/view">Open conversion room map</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1eQSXnp2NZtygl90c9GxQb7a_GjQOv6KJ/view">Surgical animation</a><span class="kind">Video · 47 MB</span></li>
+            </ul>
+          </details>
+
+          <details class="fold">
+            <summary>OR photos and room video</summary>
+            <ul>
+            <li><a href="https://drive.google.com/drive/folders/1-O9q0gP7X3uMdQp_4ZDLBpxbBMg3Sp9Y">OR photo folder</a><span class="kind">Folder</span></li>
+            <li><a href="https://drive.google.com/file/d/11t0anP3Z1AG00tG2GshMDvMThI24eoN3/view">Jackson sling</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/14yDK8Pm3-OLe3_W0hwaTEyT5nU9XxYWN/view">Wilson frame</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/17LGRUCC8LGhLdD3u07WSteo0UNZtM8lq/view">Dual C-arm field</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/10X6slDbfngyiQde7vrGWpf9P-dK6dwQI/view">Draped field</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1o1GfCC7COhs548gGqJa9EbpXumGznMVW/view">Draped field, second view</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1kvFSaZEvUbYZ3rR4UYgrNOFQuv_fP6Jk/view">Back tables and field</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1URO0CrUSC1PRagEZJ11vSeCeeKTYsJWQ/view">Mayo at the field</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1LVVVP4S9W_A2xd-dsWc09iaC6GwA8UAh/view">Room walkthrough</a><span class="kind">Video</span></li>
+            </ul>
+          </details>
+
+          <details class="fold">
+            <summary>C-arm videos</summary>
+            <ul>
+            <li><a href="https://drive.google.com/drive/folders/1opm32qfqlGxpu8ouW2krLEgQHy8EImmn">Named C-arm films</a><span class="kind">Folder</span></li>
+            <li><a href="https://drive.google.com/file/d/1zRnwK3sznTRnktapOZEPceFo2J-H-xtv/view">Lateral C-arm setup</a><span class="kind">Video</span></li>
+            <li><a href="https://drive.google.com/file/d/1CFQSmXxsQNGm1qAyzCXHIfXbCCcIMxWj/view">AP C-arm and terminology</a><span class="kind">Video</span></li>
+            <li><a href="https://drive.google.com/drive/folders/1-1BIM_J7bUa4rkRVSWQ0ngSeA2_kLr8f">C-arm walkthrough folder</a><span class="kind">Folder</span></li>
+            <li><a href="https://drive.google.com/file/d/1PiGI76NnrAEAEWmvNnwszVhnC6HFJMO5/view">Lateral C-arm setup (phone original)</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/15ZHIFulCwjOOmnpKE0PxTegumsor-F96/view">AP C-arm and terminology (phone original)</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1vWT9LYrcdjs4xU3IserKae6XjBhA8mSZ/view">C-arm at the table</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1g2Wf4qqoJ0OIcQUSTFFazMWCpoiE-BMe/view">C-arm controls</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1h59_0oiGYifnnXI3CnbOn2N352rnSYbf/view">C-arm in the room</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1IEZo4NJ6y-QbaoZ-wunuOEtNqwbjbs5I/view">Walkthrough 06</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/17bswCLiiRXj0OSqnDHtIFQgPrq0H98A-/view">Walkthrough 07</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/17ywm6YKxPaytzlT0kDfubxzSvuevfnvB/view">Walkthrough 08</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1jyiG4cjzHaZT4t51cbvuadUf5TuVUEc5/view">Walkthrough 09</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1vbKGozGFncQCpsgD2CoM5V2AKHQr7jFV/view">Walkthrough 10</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1kreSiavQH-BRBCnj-OeK9V2fG9iyai8p/view">Walkthrough 11</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1S4osJIsWJe-2ZwEf2qlEB9ct4JtZyyGF/view">Walkthrough 12</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1HHqMPlm7tUEf1gmSfUxyYqhFIaZbrH2c/view">Walkthrough 13</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/19qIrigoWYSWa2wDdMs0LM5TU5hPEXg55/view">Walkthrough 14</a><span class="kind">Clip</span></li>
+            <li><a href="https://drive.google.com/file/d/1QUIctVh5TiFfCCdgEwZL058gO9rvSZKY/view">Walkthrough 15</a><span class="kind">Clip</span></li>
+            </ul>
+          </details>
+
+          <details class="fold">
+            <summary>Mayo, card, technique</summary>
+            <ul>
+            <li><a href="https://drive.google.com/drive/folders/1FMzIsc-_HV-pYr49HiUs7ARG8r-f-_yg">Mayo folder</a><span class="kind">Folder</span></li>
+            <li><a href="https://drive.google.com/file/d/1b8u8Fn7iTBydwZaM1Pm8URZMD7xDpMT0/view">Mayo / access tray</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1eKtw7B509_REO3JKUX6bjnPhGk97H9CA/view">Back table, screws</a><span class="kind">Image</span></li>
+            <li><a href="https://drive.google.com/file/d/1A-aYScIVilDAx27R1L7IEuQnUuyUMpEf/view">Preference card</a><span class="kind">Sheet</span></li>
+            <li><a href="https://drive.google.com/file/d/151aAb3wFNfqHtmcyrmyAqsnAEMs3UHsI/view">Surgical technique guide</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/13KVDQsFhoSqU3idljrWUYFgvBIuUugWr/view">Instructions for use</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1uPOT8NyZylrV4u3aKuSwVPydJSQ1KM_1/view">Op note example</a><span class="kind">PDF</span></li>
+            </ul>
+          </details>
+
+          <details class="fold">
+            <summary>Care</summary>
+            <ul>
+            <li><a href="https://drive.google.com/drive/folders/1Ne-snYd1RlETkb7Rm-oGGPbKbHv6t_ko">Care folder</a><span class="kind">Folder</span></li>
+            <li><a href="https://drive.google.com/file/d/1oDYYz3USGAOoOhTDd3IeAdTWwgHMZXXg/view">Conservative protocol</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1CZgbsuTCmuNIifG0lR7RaJJb3TJgefTl/view">Consent</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/17DaQpt_5rNKTdPugytdmY92cyre6IGzK/view">PT protocol</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1MIr_Xg4-nRidsMf8ppM9mYTI9lYpEfSh/view">Perioperative pain protocol</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/10gVfW6FRk4HfAzQxndvxhCSoGXcNtSi2/view">Post-op nerve root irritation</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1ALa2TOum1W9t1sHSCMnoMAsphNzeTuhq/view">Pain taper chart</a><span class="kind">Image</span></li>
+            </ul>
+          </details>
+
+          <details class="fold">
+            <summary>Evidence and admin</summary>
+            <ul>
+            <li><a href="https://drive.google.com/drive/folders/1gCccuZQhCXOoD6aCHrmButVEDjH3oR4L">White papers folder</a><span class="kind">Folder</span></li>
+            <li><a href="https://drive.google.com/file/d/1BC5aB6x5WjUQVCRQupUAvnNM34Si0ybX/view">Clinical and Radiological Outcomes</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/13UEq1_IGKnd6uWhN1thWrpXpnuDK7x7E/view">OLLIF Landmark Study</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1UbV4SH9CifHluko7B-4dCFaRsee5AOAZ/view">OLLIF Study 2016</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1kpw15YQhqnAgb_u66czNC6I_ZBiMAmJt/view">OLLIF Scoliosis Study 2017</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/119KfN2Xsrdz3l7VkTU4--KCfBkjcSL1C/view">Stenosis Study Nov 2020</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1JSfuCqdeU9O3VcEpD4sZkH540aNOe_VZ/view">OLLIF BMI Impact Study</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1otNuTJgZBCgLz1sxl4V6mPp9dVfcJFcN/view">OLLIF Radiation Exposure</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1alszFJZ-6KZRPrIEBzKdREUdk2SyyzBQ/view">Transfacet OLLIF Paper</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1QkVzvg1XD0YWpMSTxC-2oiBEzGRPl9Q4/view">MIS-DLIF</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1dmsTF_6V1nXURFpOYuevCMm3tDihDpDQ/view">MIS-DTIF</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1inf8Zl4AQOJ8DjCIj_xnFKLqNXrRqe-s/view">510(k)</a><span class="kind">PDF</span></li>
+            <li><a href="https://drive.google.com/file/d/1p56kfu3VMu5YsD5gLxW2hR5Vd7e_JM3j/view">Coding FY2026</a><span class="kind">PDF</span></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-grid">
+      <div>
+        <p class="foot-name">Advanced Research Medical, LLC</p>
+        <p>1515 Highway 13 East, Burnsville, MN 55337<br>
+        <a href="tel:+16124401865">(612) 440-1865</a> · <a href="https://www.AdvResMed.com">www.AdvResMed.com</a> · <a href="mailto:info@AdvResMed.com">info@AdvResMed.com</a></p>
+        <p class="tiny">Original files live on the public Drive and open there. This page reorganizes that material for the OR. Arrow Cage / OLLIF · K173947 · MM-01-1 REV C · MM-01-2 REV B.</p>
+      </div>
+      <div>
+        <p>Technique is illustrative. Surgeon judgment governs. See IFU / 510(k) for indications.</p>
+        <p class="tiny"><a href="https://drive.google.com/drive/folders/1-L1SePyKbx5dZh5MpVVDtyh_7OVQorSW">Open the root Drive</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var switcher = document.querySelector(".role-switch");
+      if (switcher) {
+        switcher.addEventListener("click", function (e) {
+          var btn = e.target.closest("button[data-filter]");
+          if (!btn) return;
+          switcher.querySelectorAll("button").forEach(function (b) {
+            b.setAttribute("aria-pressed", b === btn ? "true" : "false");
+          });
+          body.classList.remove("role-surgeon", "role-tech", "role-scrub");
+          if (btn.dataset.filter !== "all") body.classList.add("role-" + btn.dataset.filter);
+        });
+      }
+
+      function setRole(role) {
+        var btn = switcher && switcher.querySelector('[data-filter="' + role + '"]');
+        if (btn) btn.click();
+      }
+      document.querySelectorAll("[data-set-role]").forEach(function (a) {
+        a.addEventListener("click", function () { setRole(a.getAttribute("data-set-role")); });
+      });
+
+      document.querySelectorAll(".preview-load").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var box = btn.closest(".preview-box");
+          if (!box) return;
+          var iframe = document.createElement("iframe");
+          iframe.src = btn.getAttribute("data-src");
+          iframe.title = btn.textContent.trim();
+          iframe.allow = "autoplay";
+          iframe.loading = "lazy";
+          box.innerHTML = "";
+          box.appendChild(iframe);
+        });
+      });
+
+      document.querySelectorAll("a.vid-thumb").forEach(function (a) {
+        var timer = null;
+        a.addEventListener("click", function (e) {
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          clearTimeout(timer);
+          timer = setTimeout(function () {
+            if (a.classList.contains("is-playing")) return;
+            var href = a.getAttribute("href") || "";
+            var preview = href.replace("/view", "/preview");
+            var still = a.querySelector(".vid-still");
+            if (!still || !preview) return;
+            var iframe = document.createElement("iframe");
+            iframe.src = preview;
+            iframe.allow = "autoplay; fullscreen";
+            iframe.title = (a.querySelector("span:last-of-type") || a).textContent.trim();
+            still.innerHTML = "";
+            still.appendChild(iframe);
+            a.classList.add("is-playing");
+          }, 280);
+        });
+        a.addEventListener("dblclick", function (e) {
+          e.preventDefault();
+          clearTimeout(timer);
+          window.open(a.href, "_blank", "noopener");
+        });
+      });
+
+      var toggle = document.querySelector(".nav-toggle");
+      var links = document.getElementById("nav-links");
+      if (toggle && links) {
+        toggle.addEventListener("click", function () {
+          var open = links.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        links.addEventListener("click", function (e) {
+          if (e.target.tagName === "A") {
+            links.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
