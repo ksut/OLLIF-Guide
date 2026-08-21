@@ -27,12 +27,6 @@
         <li><a href="#evidence">Evidence</a></li>
         <li><a href="#library">Library</a></li>
       </ul>
-      <div class="role-switch" role="group" aria-label="Filter by role">
-        <button type="button" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" data-filter="surgeon" aria-pressed="false">Surgeon</button>
-        <button type="button" data-filter="tech" aria-pressed="false">Tech</button>
-        <button type="button" data-filter="scrub" aria-pressed="false">Scrub</button>
-      </div>
     </div>
   </nav>
 
@@ -42,11 +36,6 @@
       <h1>OLLIF</h1>
       <p class="sub">Oblique Lateral Lumbar Interbody Fusion</p>
       <p class="lede">A minimally invasive lumbar fusion through Kambin’s triangle, done prone, with biplanar fluoroscopy and neuromonitoring.</p>
-      <div class="role-jumps">
-        <a href="#case" data-set-role="surgeon">Surgeon<small>Case flow, STG, op note</small></a>
-        <a href="#room" data-set-role="tech">Tech<small>Room maps, C-arms, fluoro</small></a>
-        <a href="#mayo" data-set-role="scrub">Scrub<small>Mayo, set, preference card</small></a>
-      </div>
     </div>
   </header>
 
@@ -834,28 +823,6 @@
 
   <script>
     (function () {
-      var body = document.body;
-      var switcher = document.querySelector(".role-switch");
-      if (switcher) {
-        switcher.addEventListener("click", function (e) {
-          var btn = e.target.closest("button[data-filter]");
-          if (!btn) return;
-          switcher.querySelectorAll("button").forEach(function (b) {
-            b.setAttribute("aria-pressed", b === btn ? "true" : "false");
-          });
-          body.classList.remove("role-surgeon", "role-tech", "role-scrub");
-          if (btn.dataset.filter !== "all") body.classList.add("role-" + btn.dataset.filter);
-        });
-      }
-
-      function setRole(role) {
-        var btn = switcher && switcher.querySelector('[data-filter="' + role + '"]');
-        if (btn) btn.click();
-      }
-      document.querySelectorAll("[data-set-role]").forEach(function (a) {
-        a.addEventListener("click", function () { setRole(a.getAttribute("data-set-role")); });
-      });
-
       document.querySelectorAll(".preview-load").forEach(function (btn) {
         btn.addEventListener("click", function () {
           var box = btn.closest(".preview-box");

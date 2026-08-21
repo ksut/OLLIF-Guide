@@ -120,39 +120,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 .nav-links a:hover { color: #fff; border-bottom-color: #8a8478; }
 
-.role-switch {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  border: 1px solid #5a574f;
-  background: var(--charcoal-2);
-}
-.role-switch button {
-  appearance: none;
-  border: 0;
-  background: transparent;
-  color: #c8c2b6;
-  font-family: var(--sans);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.38rem 0.62rem;
-  cursor: pointer;
-  border-right: 1px solid #4a4740;
-}
-.role-switch button:last-child { border-right: 0; }
-.role-switch button[aria-pressed="true"] {
-  background: #f6f1e8;
-  color: var(--ink);
-  font-weight: 600;
-}
 
-body.role-surgeon [data-role]:not([data-role~="surgeon"]),
-body.role-tech [data-role]:not([data-role~="tech"]),
-body.role-scrub [data-role]:not([data-role~="scrub"]) {
-  opacity: 0.28;
-  filter: grayscale(0.35);
-}
 
 /* ——— Layout ——— */
 .wrap {
@@ -196,31 +164,6 @@ body.role-scrub [data-role]:not([data-role~="scrub"]) {
   color: #e4ddd0;
   margin: 0 0 1.6rem;
 }
-.role-jumps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-}
-.role-jumps a {
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid #6a655c;
-  color: #f3eee4;
-  padding: 0.45rem 0.85rem;
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.role-jumps a:hover { background: #f6f1e8; color: var(--ink); border-color: #f6f1e8; }
-.role-jumps a small {
-  display: block;
-  letter-spacing: 0.02em;
-  text-transform: none;
-  font-size: 0.72rem;
-  color: #b8b0a2;
-  margin-top: 0.12rem;
-}
-.role-jumps a:hover small { color: var(--ink-3); }
 
 .disclaimer {
   background: var(--paper-2);
@@ -611,7 +554,7 @@ footer.site-foot a { color: #f3eee4; }
 }
 
 @media print {
-  .site-nav, .skip, .preview-load, .preview-box, iframe, .nav-toggle, .role-switch, .role-jumps {
+  .site-nav, .skip, .preview-load, .preview-box, iframe, .nav-toggle, {
     display: none !important;
   }
   body { background: #fff; color: #000; font-size: 10.5pt; }
