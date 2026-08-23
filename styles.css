@@ -275,6 +275,16 @@ figcaption .fig-no {
 }
 figcaption a { color: var(--open); }
 
+figure.room-map {
+  margin: 0.85rem 0 1.4rem;
+}
+figure.room-map img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fffdf8;
+}
+
 .photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem; }
 .photo-grid figure img { aspect-ratio: 4/3; object-fit: cover; }
 
